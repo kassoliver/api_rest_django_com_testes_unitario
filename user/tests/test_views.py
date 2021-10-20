@@ -34,7 +34,7 @@ class UserListViewTest(TestCase):
         print('TESTE GET USER -> OK', response.data, '| STATUS: ',response.status_code)
 
 class CreateNewUserTest(TestCase):
-    """ Test module for inserting a new comapny """
+    """ Test module for inserting a new company """
     def setUp(self):
         self.valid_user = {
             'first_name': 'Teste',
