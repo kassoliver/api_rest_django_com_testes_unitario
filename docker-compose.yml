@@ -1,0 +1,21 @@
+version: '3.6'
+services:
+  db:
+    image: postgres:12
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: "challenge_hero"
+      POSTGRES_DB: "challenge_hero"
+
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    env_file:
+      - local-var.env
+    depends_on:
+      - db
