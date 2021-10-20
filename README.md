@@ -4,13 +4,13 @@
 - Python 3.6+
 - Django Rest Framework
 - Postgress
-- Testes unitarios
+- Testes Unitários
 
 ## Tecnologias Utilizadas
 
 - Docker
 - Heroku
-- Postaman
+- Postman
 
 ## Enpoints 
 ### 1. Cadastro
@@ -43,8 +43,8 @@ Retorno:
 ```json
 {"id":3,"name":"Teste","cnpj":"11111111111111","user":[3]}
 ```
-### 1. Listagem
-#### 1.1 Usuários
+### 2. Listagem
+#### 2.1 Usuários
 Para listar um usuário pelo seu username e saber a qual ou quais empresa ele pertence, acesse o seguinte endpoint pelo método GET: https://hero-challenge.herokuapp.com/user/username
 
 Retorno:
@@ -67,7 +67,7 @@ Retorno:
     ]
 }
 ```
-#### 1.2 Empresas
+#### 2.2 Empresas
 Para listar todas as informações da empresa e seus usuários, acesse o seguinte endpoint pelo método GET: https://hero-challenge.herokuapp.com/company
 
 Retorno:
@@ -112,7 +112,7 @@ Foi criado um módulo para o código de teste, com arquivos separados para model
 A maneira mais fácil para executar todos os testes é usar o comando:
 
 ```json
-{python3 manage.py test}
+python3 manage.py test
 ```
 ## Heroku
 #### APP: challengehero
